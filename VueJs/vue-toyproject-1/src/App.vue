@@ -1,15 +1,38 @@
+<!-- App.vue -->
+
 <template>
-  <div>
-    <h1> Hello World! </h1>
+  <div id="wrap">
+    <Header />
+  
+    <div id="container">
+      <Sidebar />
+      <Content />
+    </div>
+
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from "./components/TheHeader.vue";
+import Sidebar from "./components/TheSidebar.vue";
+import Content from "./components/TheContent.vue";
+import Footer from "./components/TheFooter.vue";
+
 export default {
   name: 'App',
-  components: {}
+  components: {
+    Header
+  , Sidebar
+  , Content
+  , Footer
+  }
 };
+
 </script>
 
-<style>
+<style scoped>
+#container {
+  display: flex;
+}
 </style>
