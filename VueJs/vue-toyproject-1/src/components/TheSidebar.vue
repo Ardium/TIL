@@ -1,8 +1,18 @@
 <!-- TheSidebar.vue -->
 
 <template>
-    <div>
-        Menu
+    <div id="sidebar">
+        <h3>Menu</h3>
+        
+        <div class="defaultMenu topMenu">
+            <router-link to="/">Main</router-link>
+        </div>
+        <div>
+            <p class="defaultMenu topMenu">Practice</p>
+            <div class="defaultMenu subMenu">
+                <router-link to="/practice/calculator">Calculator</router-link>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -11,11 +21,30 @@ export default {};
 </script>
 
 <style scoped>
-div {
+#sidebar {
     background-color: green;
 
     float: left;
     height: 100%;
-    width: 25%;
+    width: 15%;
+}
+
+.defaultMenu {
+    font-style: oblique;
+
+}
+.topMenu {
+    text-align: left;
+    font-size: 3vw;
+}
+
+.subMenu {
+    text-align: right;
+    font-size: 2.5vw;
+}
+
+div h3 {
+    text-align: center;
+    color: white;
 }
 </style>

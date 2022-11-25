@@ -31,6 +31,11 @@ export default {
 </script>
 
 <style scoped>
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 #wrap {
   height: 100vh;
 }

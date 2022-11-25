@@ -1,8 +1,8 @@
 <!-- TheContent.vue -->
 
 <template>
-    <div>
-        content
+    <div id="content">
+        <router-view></router-view>
     </div>
 </template>
 
@@ -12,11 +12,11 @@ export default {};
 </script>
 
 <style scoped>
-div {
+#content {
     background-color: yellow;
 
     float: right;
     height: 100%;
-    width: 75%;
+    width: 85%;
 }
 </style>
