@@ -2,9 +2,7 @@
 
 <template>
     <header>
-        <div id="header">
-            Header
-        </div>
+        Header
     </header>
 </template>
 
@@ -14,9 +12,7 @@ export default {};
 </script>
 
 <style scoped>
-#header {
-    border: solid 3px;
-    border-color: red;
+header {
+    background-color: red;
 }
-
 </style>

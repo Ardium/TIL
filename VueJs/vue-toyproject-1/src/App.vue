@@ -3,12 +3,12 @@
 <template>
   <div id="wrap">
     <Header />
-  
+
     <div id="container">
       <Sidebar />
       <Content />
     </div>
-
+    
     <Footer />
   </div>
 </template>
@@ -28,11 +28,22 @@ export default {
   , Footer
   }
 };
-
 </script>
 
 <style scoped>
+#wrap {
+  height: 100vh;
+}
+
+#wrap Header {
+  height: 10%;
+}
+
 #container {
-  display: flex;
+  height: 80%;
+}
+
+#wrap Footer {
+  height: 10%;
 }
 </style>

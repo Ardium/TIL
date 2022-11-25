@@ -2,9 +2,7 @@
 
 <template>
     <footer>
-        <div id="footer">
-            Footer
-        </div>
+        Footer
     </footer>
 </template>
 
@@ -13,8 +11,7 @@ export default {};
 </script>
 
 <style scoped>
-#footer {
-    border : solid 3px;
-    border-color: blue;
+footer {
+    background-color: red;
 }
 </style>
