@@ -35,12 +35,12 @@ export default {};
 }
 .topMenu {
     text-align: left;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .subMenu {
     text-align: right;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
 }
 
 div h3 {
