@@ -5,7 +5,7 @@
         <h3>Menu</h3>
         
         <div class="defaultMenu topMenu">
-            <router-link to="/">Main</router-link>
+            <router-link to="/home">Home</router-link>
         </div>
         <div>
             <p class="defaultMenu topMenu">Practice</p>
@@ -30,8 +30,8 @@ export default {};
 }
 
 .defaultMenu {
+    padding: 5px;
     font-style: oblique;
-
 }
 .topMenu {
     text-align: left;

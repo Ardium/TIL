@@ -80,7 +80,7 @@ export default {
             this.printLog(strSymbol);
             if (strSymbol == '=') {
                 // 연산 수식
-                this.strResult = this.strInput.trimEnd();
+                this.strResult = this.strInput + ' ' + strSymbol;
 
                 // 연산 수행 및 결과
                 const elements = this.strResult.split(' ');

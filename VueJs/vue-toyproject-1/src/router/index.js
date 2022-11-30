@@ -12,7 +12,7 @@ import PracticeCalculator from "../views/Practice/PracticeCalculator.vue";
 // 라우팅될 페이지 정보를 담는 변수
 const routes = [
     {
-        path: "/",
+        path: "/home",
         name: "home",
         component: HomePage
     },
