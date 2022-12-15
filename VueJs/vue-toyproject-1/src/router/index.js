@@ -5,7 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // 라우팅될 페이지 경로 및 별칭
 import HomePage from "../views/HomePage.vue";
 import PracticePage from "../views/PracticePage.vue";
-import PracticeCalculator from "../views/Practice/PracticeCalculator.vue";
+import PracticeCalculator from "../components/Practice/PracticeCalculator.vue";
 
 
 
