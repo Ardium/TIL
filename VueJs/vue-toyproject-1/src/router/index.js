@@ -6,7 +6,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from "../views/HomePage.vue";
 import PracticePage from "../views/PracticePage.vue";
 import PracticeCalculator from "../views/Practice/PracticeCalculator.vue";
-
+import PracticeTodo from "../views/Practice/PracticeTodo.vue";
 
 
 // 라우팅될 페이지 정보를 담는 변수
@@ -24,6 +24,10 @@ const routes = [
             {
                 path: "calculator",
                 component: PracticeCalculator
+            },
+            {
+                path: "todo",
+                component: PracticeTodo
             }
         ]
     }

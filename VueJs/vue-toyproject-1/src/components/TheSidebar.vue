@@ -12,6 +12,9 @@
             <div class="defaultMenu subMenu">
                 <router-link to="/practice/calculator">Calculator</router-link>
             </div>
+            <div class="defaultMenu subMenu">
+                <router-link to="/practice/todo">Todo</router-link>
+            </div>
         </div>
     </div>
 </template>
