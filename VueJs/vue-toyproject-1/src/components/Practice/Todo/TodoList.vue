@@ -6,8 +6,9 @@
             <li v-for="(todoItem, idx) in propsdata"
                 v-bind:key="todoItem">
                 
-                <input type="checkbox">
-                {{ todoItem }}
+                <input  type="checkbox" 
+                        id="chkTodoItem">
+                <span> {{ todoItem }} </span>
                 <button v-on:click="removeItem(todoItem, idx)">D</button>
             </li>
         </ul>
@@ -26,4 +27,9 @@ export default {
 </script>
 
 <style scoped>
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: gray;
+    font-style: italic;
+}
 </style>
