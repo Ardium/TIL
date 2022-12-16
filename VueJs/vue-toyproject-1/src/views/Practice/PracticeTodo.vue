@@ -23,21 +23,33 @@ export default {
     },
     created: function() {
         for (let idx = 0; idx < localStorage.length; idx++) {
-            this.todoItems.push(localStorage.key(idx));
+            let key = localStorage.key(idx);
+            let value = localStorage.getItem(key);
+            let todoItem = {
+                key: key,
+                value: value
+            };
+            this.todoItems.push(todoItem);
+            console.log("Create Item: " + todoItem.key + " | " + todoItem.value);
         }
     },
     methods: {
         addItem: function(newItem) {
-            console.log("Add Item: " + newItem);
+            let todoId = Date.now();
+            let todoItem = {
+                key: todoId,
+                value: newItem
+            };
+            this.todoItems.push(todoItem);
+            localStorage.setItem(todoId, newItem);
 
-            localStorage.setItem(newItem, newItem);
-            this.todoItems.push(newItem);
+            console.log("Add Item: " + todoItem.key + " | " + todoItem.value);
         },
         removeItem: function(todoItem, idx) {
-            console.log("Remove Item: " + todoItem + "(" + idx + ")");
-            
-            localStorage.removeItem(todoItem);
+            localStorage.removeItem(todoItem.key);
             this.todoItems.splice(idx, 1);
+
+            console.log("Remove Item: (idx|key|value)" + idx + "|" + todoItem.key + "|" + todoItem.value);
         },
         removeItems: function() {
             console.log("Remove All Items");

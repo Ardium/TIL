@@ -4,11 +4,10 @@
     <div id="todoList">
         <ul>
             <li v-for="(todoItem, idx) in propsdata"
-                v-bind:key="todoItem">
+                v-bind:key="idx">
                 
-                <input  type="checkbox" 
-                        id="chkTodoItem">
-                <span> {{ todoItem }} </span>
+                <input  type="checkbox">
+                <span> {{ todoItem.value }}</span>
                 <button v-on:click="removeItem(todoItem, idx)">D</button>
             </li>
         </ul>
