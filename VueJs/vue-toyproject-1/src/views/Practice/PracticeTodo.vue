@@ -25,25 +25,25 @@ export default {
         for (let idx = 0; idx < localStorage.length; idx++) {
             let key = localStorage.key(idx);
             let value = localStorage.getItem(key);
+            
+            this.pushItem(key, value);
+        }
+    },
+    methods: {
+        pushItem: function(key, value) {
             let todoItem = {
                 key: key,
                 value: value
             };
             this.todoItems.push(todoItem);
-            console.log("Create Item: " + todoItem.key + " | " + todoItem.value);
-        }
-    },
-    methods: {
+
+            console.log("Push Item: " + todoItem.key + " | " + todoItem.value);
+        },
         addItem: function(newItem) {
             let todoId = Date.now();
-            let todoItem = {
-                key: todoId,
-                value: newItem
-            };
-            this.todoItems.push(todoItem);
+            
+            this.pushItem(todoId, newItem);
             localStorage.setItem(todoId, newItem);
-
-            console.log("Add Item: " + todoItem.key + " | " + todoItem.value);
         },
         removeItem: function(todoItem, idx) {
             localStorage.removeItem(todoItem.key);
