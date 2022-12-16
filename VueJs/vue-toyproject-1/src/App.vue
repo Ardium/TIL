@@ -2,33 +2,30 @@
 
 <template>
   <div id="wrap">
-    <Todo></Todo>
-    <!-- <Header />
+    <Header />
 
     <div id="container">
       <Sidebar />
       <Content />
     </div>
     
-    <Footer /> -->
+    <Footer />
   </div>
 </template>
 
 <script>
-import Todo from "./views/Practice/PracticeTodo.vue";
-// import Header from "./components/TheHeader.vue";
-// import Sidebar from "./components/TheSidebar.vue";
-// import Content from "./components/TheContent.vue";
-// import Footer from "./components/TheFooter.vue";
+import Header from "./components/TheHeader.vue";
+import Sidebar from "./components/TheSidebar.vue";
+import Content from "./components/TheContent.vue";
+import Footer from "./components/TheFooter.vue";
 
 export default {
   name: 'App',
   components: {
-    Todo
-  //   Header
-  // , Sidebar
-  // , Content
-  // , Footer
+    Header
+  , Sidebar
+  , Content
+  , Footer
   }
 };
 </script>
