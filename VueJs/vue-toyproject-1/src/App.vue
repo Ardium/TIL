@@ -34,6 +34,8 @@ export default {
 * {
   box-sizing: border-box;
   overflow: hidden;
+
+  font-family: 'Gamja Flower', cursive;
 }
 
 #wrap {
