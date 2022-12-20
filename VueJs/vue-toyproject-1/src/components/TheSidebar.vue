@@ -7,6 +7,11 @@
         <div class="defaultMenu topMenu">
             <router-link to="/home">Home</router-link>
         </div>
+        
+        <div class="defaultMenu topMenu">
+            <router-link to="/notice">Notice</router-link>
+        </div>
+        
         <div>
             <p class="defaultMenu topMenu">Practice</p>
             <div class="defaultMenu subMenu">
