@@ -2,12 +2,14 @@
 
 <template>
     <div id="noticeList">
-        <div id="notice_btngrp">
-            <button>등록</button>
-            <button>수정</button>
-            <button>삭제</button>
+        <div id="notice_list_header">
+            <div id="notice_btngrp">
+                <button>등록</button>
+                <button>수정</button>
+                <button>삭제</button>
+            </div>
         </div>
-        <div id="notice_list">
+        <div id="notice_list_body">
             <table id="notice_table">
                 <thead>
                     <tr>
@@ -55,26 +57,28 @@ export default {}
     background-color: white;
 }
 
+#notice_btngrp {
+    float: right;
+}
+
 #notice_btngrp button {
     margin: 5px;
-
-    float: right;
 
     font-size: x-small;
 }
 
-#notice_list {
+#notice_list_body {
     margin: 5px;
 }
 
-#notice_list table {
+#notice_list_body table {
     width: 100%;
 
     border: solid 1px black;
     border-collapse: collapse;
 }
 
-#notice_list table th, td {
+#notice_list_body table th, td {
     padding: 5px;
 
     border-bottom: solid 1px black;
@@ -84,7 +88,7 @@ export default {}
     font-size: x-small;
 }
 
-#notice_list table th {
+#notice_list_body table th {
     background-color: gray;
     color: white;
 }
