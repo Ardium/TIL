@@ -5,8 +5,8 @@
         <input  type="text"
                 placeholder="Todo로 관리할 사항을 입력하세요."
                 v-model="newItem"
-                v-on:keyup.enter="addItem(newItem)"/>
-        <button v-on:click="addItem(newItem)">A</button>
+                v-on:keyup.enter="addItem()"/>
+        <button v-on:click="addItem()">A</button>
     </div>
 </template>
 
@@ -18,9 +18,14 @@ export default {
         }
     },
     methods: {
-        addItem: function (item) {
-            this.$emit("addItem", item);
-            this.newItem = "";
+        addItem: function () {
+            if (this.newItem.trim() !== "") {
+                this.$emit("addItem", this.newItem);
+                this.newItem = "";
+            }
+            else {
+                alert("입력 필드에 값이 입력되지 않았습니다.");
+            }
         },
     }
 };
