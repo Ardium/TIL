@@ -1,4 +1,12 @@
 /bin
 
+# Exe files
+*.dll
+*.exe
+*.o
+*.so
+*.com
+*.class
+
 # Editor directories and files
 .vscode
