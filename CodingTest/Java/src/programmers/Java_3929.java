@@ -21,7 +21,6 @@ public class Java_3929 {
     public int[] solution(int[][] v) {
         int[] answer = new int [2];
 
-        System.out.println(Arrays.deepToString(v));
         // x position
         if(v[0][0] == v[1][0]) {
             answer[0] = v[2][0];
@@ -44,7 +43,6 @@ public class Java_3929 {
             answer[1] = v[0][1];
         }
         
-        System.out.println(Arrays.toString(answer));
         return answer;
     }
 }
