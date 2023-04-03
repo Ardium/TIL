@@ -1,7 +1,5 @@
 package programmers;
 
-import java.util.Arrays;
-
 /*
  * Question Number: 3929
  * Question: 직사각형을 만드는 데 필요한 4개의 점 중 3개의 좌표가 주어질 때, 나머지 한 점의 좌표를 구하려고 합니다. 
