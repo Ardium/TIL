@@ -1,8 +1,5 @@
 package programmers.level0;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /*
  * Question Number: 120895
  * Question: 문자열 my_string과 정수 num1, num2가 매개변수로 주어질 때, 
